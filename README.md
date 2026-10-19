@@ -308,15 +308,15 @@ Available from GeoSphere Austria. The package uses the `ensemble` variable and s
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/4wardEnergyResearch/AI4WIND_standalone_ML_model.svg?style=for-the-badge
-[contributors-url]: https://github.com/4wardEnergyResearch/AI4WIND_standalone_ML_model/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/4wardEnergyResearch/AI4WIND_standalone_ML_model.svg?style=for-the-badge
-[forks-url]: https://github.com/4wardEnergyResearch/AI4WIND_standalone_ML_model/network/members
-[stars-shield]: https://img.shields.io/github/stars/4wardEnergyResearch/AI4WIND_standalone_ML_model.svg?style=for-the-badge
-[stars-url]: https://github.com/4wardEnergyResearch/AI4WIND_standalone_ML_model/stargazers
-[issues-shield]: https://img.shields.io/github/issues/4wardEnergyResearch/AI4WIND_standalone_ML_model.svg?style=for-the-badge
-[issues-url]: https://github.com/4wardEnergyResearch/AI4WIND_standalone_ML_model/issues
-[license-shield]: https://img.shields.io/github/license/4wardEnergyResearch/AI4WIND_standalone_ML_model.svg?style=for-the-badge
-[license-url]: https://github.com/4wardEnergyResearch/AI4WIND_standalone_ML_model/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning.svg?style=for-the-badge
+[contributors-url]: https://github.com/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning.svg?style=for-the-badge
+[forks-url]: https://github.com/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning/network/members
+[stars-shield]: https://img.shields.io/github/stars/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning.svg?style=for-the-badge
+[stars-url]: https://github.com/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning/stargazers
+[issues-shield]: https://img.shields.io/github/issues/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning.svg?style=for-the-badge
+[issues-url]: https://github.com/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning/issues
+[license-shield]: https://img.shields.io/github/license/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning.svg?style=for-the-badge
+[license-url]: https://github.com/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/4ward-energy-research-gmbh/
