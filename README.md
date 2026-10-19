@@ -83,7 +83,6 @@ The package includes:
 - **ERA5/INCA wind speed extraction** from NetCDF grids at the nearest grid point and height level to each turbine
 - **Auto model selection**: compares Gradient Boosting, XGBoost, Random Forest, MLP, and Ridge regression via GridSearchCV
 - **Direct-fit mode**: train a specific pipeline with chosen hyperparameters, without cross-validation
-- **Fleet-scale validation** with per-turbine diagnostic plots and structured JSON results
 - **Turbine configuration from database**: load metadata, power curves, and cleaning parameters from an SQLite database
 - **Publication-ready src layout** installable via `pip` or `uv`
 
@@ -101,7 +100,6 @@ src/ai4wind_ml/                  Python package (src layout)
 ├── training.py                  ModelTrainer with auto and direct modes
 ├── prediction.py                PowerPredictor
 ├── pipeline.py                  WindTurbinePipeline (high-level orchestrator)
-├── validation.py                Fleet-scale validation framework
 └── preprocessing/
     ├── wind.py                  ERA5 NetCDF wind speed extraction
     └── power.py                 SCADA data cleaning (4-stage flagging)
@@ -116,8 +114,7 @@ data/
 │   └── cleaned/
 │       ├── csv/                 Flagged time series output
 │       └── diagnostics/         Per-turbine cleaning diagnostic plots
-├── ml_models/                   Saved model artifacts (.pkl)
-└── validation/                  Validation results (JSON + plots)
+└── ml_models/                   Saved model artifacts (.pkl)
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,8 +134,8 @@ data/
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/4wardEnergyResearch/AI4WIND_standalone_ML_model.git
-cd AI4WIND_standalone_ML_model
+git clone https://github.com/4wardEnergyResearch/AI4Wind_ML_PP_Model_data_cleaning.git
+cd AI4Wind_ML_PP_Model_data_cleaning
 uv sync
 ```
 
@@ -287,24 +284,6 @@ INCA_ERA5_2020_wind_{HEIGHT}m_2020-{MM}.nc
 ```
 
 Available from GeoSphere Austria. The package uses the `ensemble` variable and selects the height level nearest to the turbine's hub height.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- VALIDATION -->
-## Validation
-
-Run the fleet-scale validation framework:
-
-```bash
-uv run python -m ai4wind_ml.validation
-```
-
-This selects a random sample of turbines (configurable at the top of `validation.py`), runs the full pipeline for each, and outputs:
-
-- `data/validation/validation_results.json` — per-turbine metrics, model comparison tables, and cleaning statistics
-- `data/validation/plots/{turbine_id}.png` — four-panel diagnostic plots (true vs. predicted, power vs. wind speed, residual distribution, residual vs. wind speed)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
