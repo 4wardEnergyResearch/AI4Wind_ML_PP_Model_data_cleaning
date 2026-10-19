@@ -46,7 +46,6 @@ https://github.com/othneildrew/Best-README-Template/
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#data-requirements">Data Requirements</a></li>
-    <li><a href="#validation">Validation</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -66,7 +65,6 @@ The package includes:
 - A **four-stage data cleaning routine** for quality-flagging turbine measurement data
 - **Automated ML model selection** comparing five regression algorithms via cross-validated grid search
 - **ERA5 wind speed extraction** from NetCDF files using spatial KD-tree lookup
-- A **fleet-scale validation framework** for systematic evaluation across hundreds of turbines
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
